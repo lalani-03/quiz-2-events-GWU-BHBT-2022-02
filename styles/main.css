@@ -67,22 +67,21 @@ body {
   border-color: #007bff;
 }
 
-/* Search */
+ 
 .search input {
   padding: 8px 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
   min-width: 200px;
 }
-
-/* Event grid */
+ 
 .event-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* Event card */
+ 
 .event-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -123,7 +122,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Footer inside card */
+ 
 .event-footer {
   border-top: 1px solid #eee;
   padding: 10px 15px;
@@ -151,7 +150,7 @@ body {
   color: #333;
 }
 
-/* No results */
+  
 .no-results {
   text-align: center;
   background-color: #fff;
@@ -161,7 +160,7 @@ body {
   color: #777;
 }
 
-/* Responsive layout */
+ 
 @media (min-width: 768px) {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -174,7 +173,7 @@ body {
   }
 }
 
-/* Footer */
+ 
 .site-footer {
   margin-top: 40px;
   text-align: center;
