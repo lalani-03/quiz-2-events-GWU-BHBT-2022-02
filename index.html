@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechCon 2025 Event Schedule</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 id="site-title">TechCon 2025 — Event Schedule</h1>
+      <div class="controls">
+        <div class="theme-toggle" aria-hidden="false">
+          <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container hero">
+      <p class="lead">Nov 19–22, 2025 • Hybrid conference • Join industry leaders, workshops, and panels.</p>
+      <div class="toolbar" role="region" aria-label="Event controls">
+        <div class="filters" role="toolbar" aria-label="Filter events by type">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Keynote">Keynotes</button>
+          <button class="filter-btn" data-filter="Workshop">Workshops</button>
+          <button class="filter-btn" data-filter="Talk">Talks</button>
+          <button class="filter-btn" data-filter="Panel">Panels</button>
+          <button class="filter-btn" data-filter="Social">Social</button>
+        </div>
+
+        <div class="search">
+          <label for="search-input" class="visually-hidden">Search events</label>
+          <input id="search-input" type="search" placeholder="Search title or description..." aria-label="Search events" />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container main-content" id="main-content">
+    <section id="event-container" aria-live="polite" aria-atomic="true" class="event-grid"></section>
+    <div id="no-results" class="no-results" hidden>
+      No events found.
+    </div>
+    <div id="results-announcer" class="sr-only" aria-live="assertive"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TechCon • Built by <strong>Lalani</strong></p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
